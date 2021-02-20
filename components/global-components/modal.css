@@ -1,0 +1,58 @@
+.logOut {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+.content {
+  text-align: 'left';
+  background-color: #4d9aff;
+  font-weight: bold;
+  padding: 16px;
+  color: white
+}
+
+.icon {
+  color: red;
+}
+
+.cardLayout {
+  position: relative;
+  height: 10px;
+  top: -7px;
+  z-index: 99999999999;
+  box-shadow: 3px 3px #f8f8f8;
+  min-width: 100px;
+  float: right;
+  animation: popUp 2s alternate ease-in-out forwards;
+}
+
+.cardLayout::after {
+  position: absolute;
+  top: -100%;
+  right: 7%;
+  content: '';
+  padding: 10px;
+  transform: rotate(45deg);
+  /* border: 2px solid red; */
+  margin-left: 10px;
+  margin-bottom: -200px;
+  background-color: #4d9aff;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Development Drop down */
+.single-select {
+  align-items: center;
+  /* margin: 70px; */
+}
